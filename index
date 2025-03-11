@@ -1,0 +1,45 @@
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+
+export default function ComingSoon() {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center p-6">
+      <motion.img 
+        src="https://media.licdn.com/dms/image/v2/D5603AQGSX24Z5DdjEw/profile-displayphoto-shrink_400_400/B56ZUsY1XDGQAg-/0/1740206463025?e=1747267200&v=beta&t=Ab8BtCHSBLKvj87yh4ZMwrvDJba6B1ZyWAQPPR2yJCU" 
+        alt="Jayesh Vyas" 
+        className="w-32 h-32 rounded-full mb-4 border-4 border-white"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5 }}
+      />
+      
+      <motion.h1 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 1.5 }} 
+        className="text-5xl font-bold mb-4"
+      >
+        JayeshVyas.com
+      </motion.h1>
+      
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 1.5 }} 
+        className="text-xl font-semibold mb-6 text-yellow-300"
+      >
+        🚀 Something incredible is coming your way! Our upgraded website with exciting new features is on its way. Stay tuned!
+      </motion.p>
+      
+      <p className="text-lg font-semibold mb-6">Founder & Business Leader | Future Chartered Accountant | Helping Businesses Grow with Smart Financial Strategies</p>
+      
+      <p className="text-md max-w-2xl">
+        Founder & Consultant at JaySoftShine, providing expert tax consultancy and risk advisory services to businesses while managing outsourced projects from Big Four firms and other clients. Specializing in financial risk mitigation, tax planning, and regulatory compliance, I help businesses optimize strategies and ensure compliance. With a client-focused approach, I deliver tailored solutions across industries, driving efficiency, growth, and financial success.
+      </p>
+      
+      <Button className="mt-6 bg-white text-blue-600 hover:bg-gray-200" onClick={() => window.location.href = "https://imjayvyas.com"}>
+        Get in Touch
+      </Button>
+    </div>
+  );
+}
