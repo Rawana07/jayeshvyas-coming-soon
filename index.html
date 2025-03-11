@@ -3,44 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Founder & Business Leader | Future Chartered Accountant | Helping Businesses Grow with Smart Financial Strategies">
+    <title>Jayesh Vyas | Coming Soon...</title>
+    <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQGSX24Z5DdjEw/profile-displayphoto-shrink_400_400/B56ZUsY1XDGQAg-/0/1740206463025?e=1747267200&v=beta&t=Ab8BtCHSBLKvj87yh4ZMwrvDJba6B1ZyWAQPPR2yJCU">
+    
     <style>
         body {
+            font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
+            margin: 0;
             background: linear-gradient(to right, #3b82f6, #9333ea);
             color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
-        .container {
-            max-width: 600px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        .profile-img {
-            width: 128px;
-            height: 128px;
+        img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             border: 4px solid white;
             margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 1s forwards;
+        }
+        h2 {
+            font-size: 28px;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 2s forwards;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 18px;
+            max-width: 600px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 3s forwards;
+        }
+        .highlight {
+            font-weight: bold;
+            font-size: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 4s forwards;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 5s forwards;
+        }
+        .btn:hover {
+            background-color: #e68900;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://media.licdn.com/dms/image/D5603AQGSX24Z5DdjEw/profile-displayphoto-shrink_400_400/0/1740206463025?v=beta&t=Ab8BtCHSBLKvj87yh4ZMrwDJba6B1ZyWAQPP2RyJCU" 
-            alt="Jayesh Vyas" class="profile-img">
-        <h1>Coming Soon</h1>
-        <p>We are working on something amazing. Stay tuned!</p>
-    </div>
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQGSX24Z5DdjEw/profile-displayphoto-shrink_400_400/B56ZUsY1XDGQAg-/0/1740206463025?e=1747267200&v=beta&t=Ab8BtCHSBLKvj87yh4ZMwrvDJba6B1ZyWAQPPR2yJCU" alt="Jayesh Vyas">
+    
+    <h1>JayeshVyas.com</h1>
+    <h2>🚀 Our new upgraded website is coming soon!</h2>
+    
+    <p>We are working on an exciting, feature-packed experience. Stay tuned for something amazing! 🌟</p>
+    
+    <p class="highlight">Founder & Business Leader | Future Chartered Accountant | Helping Businesses Grow with Smart Financial Strategies</p>
+    
+    <p>Founder & Consultant at JaySoftShine, providing expert tax consultancy and risk advisory services to businesses while managing outsourced projects from Big Four firms and other clients. Specializing in financial risk mitigation, tax planning, and regulatory compliance, I help businesses optimize strategies and ensure compliance. With a client-focused approach, I deliver tailored solutions across industries, driving efficiency, growth, and financial success.</p>
+    
+    <a href="https://imjayvyas.com" class="btn">Get in Touch</a>
 </body>
 </html>
